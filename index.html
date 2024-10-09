@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="img/favicon.svg" rel="shortcut icon">
     <meta charset="UTF-8">
     <meta name="author" content="Kevin Esteves">
     <meta name="description" content="Explore the UX/UI design portfolio of Kevin Esteves, featuring innovative and user-centric projects. Discover case studies, design thinking processes, and creative solutions that highlight Kevin's expertise in crafting intuitive digital experiences.">
-    <title>Kevin Esteves UX/UI</title>
+    <title>Kevin Esteves | UX/UI Designer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Fonts-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
 		<div>
-			<a href="index.html"> <img src="img/logo_light_mode.svg" alt="Your Name" > </a>
+			<a href="index.html"> <img src="img/logo_dark_mode.svg" style="width: auto; height: 48px;" alt="Your Name" > </a>
 			<nav>
-                <ul>
+                <ul class="navigation">
 				<li><a href="index.html">Work</a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="contact">Contact</a></li>
@@ -21,35 +34,32 @@
         </div>
     </header>
     <main>
-        <div>
+        <div id="heroSection">
             <div>
-                <h1>Hey, this is Kevin!</h1>
-                <p>I am a product designer passionate about creating intuitive and engaging digital experiences</p>
+                <h4>Hey, this is Kevin!</h4>
+                <h1>I am a <span class="italic"> product designer </span> passionate about creating intuitive and engaging <span class="h3-style">digital experiences</span></h1>
             </div>
         </div>
-        <div>
+        <div id="workSection">
             <div>
-                <h2>↳ Featured work</h2>
-                <div>
-                    <div>
+                <h5>↳ Featured work</h5>
+                <div class="project-card">
                         <picture>
                             <source srcset="img/vela/@1x/vela_app_mockup@1x.png" media="(max-width:767px)">
                             <img src="img/vela/@2x/vela_app_mockup@2x.png" alt="Vela app Mockup">
                         </picture>
-                    </div>
-                    <div>
-                        <h3>Vela app</h3>
-                        <h4>UX RESEARCH - UX/UI DESIGN - USABILITY TESTING</h4>
-                        <p>A wind, wave, and weather app for water sports lovers.</p>
-                        <a href="projectvela.html">Read More</a>
-                    </div>
+                        <h6>Vela app</h6>
+                        <h7>UX RESEARCH - UX/UI DESIGN - USABILITY TESTING</h7>
+                        <p1>A wind, wave, and weather app for water sports lovers.</p1>
+                        <a href="projectvela.html" class="button"><p2>Read more</p2></a>
+                        <a href="mailto:kevin_esteves@hotmail.com" class="button contact"><p1>Send me an email</p1></a>
                 </div>
             </div>
         </div>
     </main>
     <footer id="contact">
         <div>
-            <h2>Get in touch</h2>
+            <h5>Get in touch</h5>
             <div>
                 <a href="mailto:kevin_esteves@hotmail.com"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 9V2L10 4" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

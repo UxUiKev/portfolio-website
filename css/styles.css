@@ -1,0 +1,413 @@
+/*
+Colors used: 
+
+Background:
+Primary (dark black): #1b1b1b
+Secondary (light gray): #f0f0f0
+
+Text on dark background:
+Primary (white): #ffffff
+Gray (context text): #b3b3b3
+
+Text on light background:
+Title (black): #000000
+Paragraph (dark gray): #666666
+
+Contrasting colors for slide animations:
+Pink: #c291b6
+Blue: #6da3d9
+Purple: #9a72c4
+*/
+
+header {
+    background-color: #1C1C1C;
+    padding: 20px;
+}
+
+#heroSection {
+    background-color: #1C1C1C;
+    padding: 20px;
+}
+
+#projectSection {
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+
+#workSection {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+#about-mainSection {
+    background-color: #1C1C1C;
+    padding: 20px;
+}
+
+#project-contentSection {
+    background-color: #000000;
+    padding: 20px;
+}
+
+footer {
+    background-color: #FFFFFF;
+}
+
+img {
+    width: 100%;
+  }
+
+/* 
+===================================
+Index Page (Mobile-first)
+===================================
+*/
+
+
+html {
+    font-size: 16px; /* Mobile-first base font size */
+}
+
+.italic {
+    font-style: italic;
+    letter-spacing: 0;
+}
+
+h1 { /* Presentation index */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 200; /* light */
+    font-style: light;
+    font-size: 2.25em; /* 36px / 16px = 2.25em */
+    color: #FFFFFF;
+    letter-spacing: -0.01875em; /* -0.3px / 16px */
+    text-align: center;
+}
+
+h2 { /* Presentation italic index */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300; /* light italic */
+    font-style: italic;
+    font-size: 2.25em; /* 36px */
+    color: #FFFFFF;
+    letter-spacing: -0.01875em;
+    text-align: center;
+}
+
+.h3-style { /* Sliding words */
+    font-family: 'Lora', serif;
+    font-weight: 300; /* regular italic */
+    font-style: italic;
+    color: #9a72c4; /* Dynamic purple, blue, pink */
+    letter-spacing: -0.01875em;
+    font-size: inherit
+}
+
+h4 { /* Hey message */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 200; /* regular */
+    font-size: 1.5em; /* 24px */
+    color: #FFFFFF;
+    letter-spacing: -0.01875em;
+    text-align: center;
+}
+
+h5 { /* Featured work title */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400; /* regular */
+    font-size: 1.125em; /* 18px */
+    color: #000000;
+    letter-spacing: -0.01875em;
+}
+
+h6 { /* Work cards title */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400; /* regular */
+    font-size: 1.25em; /* 20px */
+    color: #000000;
+    letter-spacing: -0.01875em;
+}
+
+h7 { /* Project card subtitle */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300; /* light */
+    font-size: 0.75em; /* 12px */
+    color: #000000;
+    letter-spacing: 0;
+}
+
+p1 { /* Project card content */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300; /* light */
+    font-size: 0.875em; /* 14px */
+    color: #000000;
+    letter-spacing: 0;
+}
+
+
+/* 
+===================================
+About Page
+===================================
+*/
+
+h8 { /* Presentation title */
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; /* regular */
+    font-size: 1.75em; /* 28px */
+    color: #BFBFBF;
+    letter-spacing: 0;
+}
+
+.h8-style {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; /* regular */
+    color: #FFFFFF;
+    letter-spacing: 0;
+    font-size: inherit
+}
+
+h9 { /* About titles */
+    font-family: 'Inter', sans-serif;
+    font-weight: 500; /* medium */
+    font-size: 1.125em; /* 18px */
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+h10 { /* About subtitles */
+    font-family: 'Inter', sans-serif;
+    font-weight: 500; /* medium */
+    font-size: 1em; /* 16px */
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+
+p2 { /* About content */
+    font-family: 'Inter', sans-serif;
+    font-weight: 300; /* light */
+    font-size: 0.875em; /* 14px */
+    color: #BFBFBF;
+    letter-spacing: 0;
+}
+
+.p2-style {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    font-size: inherit
+}
+
+p3 { /* About content - smaller */
+    font-family: 'Inter', sans-serif;
+    font-weight: 300; /* light */
+    font-size: 0.875em; /* 14px */
+    color: #e6e6e6;
+    letter-spacing: 0;
+}
+
+
+/* 
+===================================
+Navigation (Work, About, Contact)
+===================================
+*/
+
+h11 { /* Navigation */
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1em; /* 16px */
+    color: grey;
+    letter-spacing: 0;
+}
+
+.navigation {
+    font-family: 'Inter', sans-serif;
+    list-style-type: none; /* Removes default bullets */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+    display: flex; /* Aligns the items in a row */
+}
+
+.navigation li {
+    margin-right: 20px; /* Adds space between navigation items */
+}
+
+.navigation a {
+    color: gray; /* Default color */
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover and Active states */
+.navigation a:hover,
+.navigation a:active {
+    color: white; /* Color on hover and active */
+}
+
+/* Optional: Active link styling */
+.navigation a.active {
+    color: white; /* Active link color */
+}
+
+/* 
+===================================
+Work Page - Light Background
+===================================
+*/
+
+h12 { /* Project title */
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; /* regular */
+    font-size: 1.75em; /* 28px */
+    color: #000000;
+    letter-spacing: -0.04375em; /* -0.7px / 16px */
+}
+
+h13 { /* Title */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400; /* light */
+    font-size: 1.5em; /* 24px */
+    color: #000000;
+    letter-spacing: -0.04375em;
+}
+
+h14 { /* Subtitle */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400; /* medium */
+    font-size: 1.125em; /* 24px */
+    color: #000000;
+    letter-spacing: -0.04375em;
+}
+
+p4 { /* Work page content */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 200; /* regular */
+    font-size: 1em; /* 16px */
+    color: #000000;
+    letter-spacing: 0px; /* -0.5px / 16px */
+}
+
+
+/* 
+===================================
+Work Page - Dark Background
+===================================
+*/
+
+h15 { /* Title */
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; /* regular */
+    font-size: 1.5em; /* 24px */
+    color: #FFFFFF;
+    letter-spacing: -0.04375em;
+}
+
+h16 { /* Subtitle */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500; /* medium */
+    font-size: 1em; /* 16px */
+    color: #FFFFFF;
+    letter-spacing: -0.04375em;
+}
+
+p5 { /* Project page content */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400; /* regular */
+    font-size: 1em; /* 16px */
+    color: #BFBFBF;
+    letter-spacing: -0.03125em;
+}
+
+/* 
+===================================
+Responsive for Larger Screens
+===================================
+*/
+
+@media (min-width: 768px) {
+    html {
+        font-size: 18px; /* Tablet base font size */
+    }
+}
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 20px; /* Desktop base font size */
+    }
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: flex-start; /* Aligns the elements to the left */
+    gap: 8px; /* Adds space between each element */
+}
+
+.project-image {
+    width: 100%; /* Adjust image size as needed */
+}
+
+.project-title, .project-subtitle, .project-description, .read-more, .contact {
+    margin: 0; /* Remove default margins */
+}
+
+.button {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #333;
+    color: #ffffff; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #333; /* width of the border, type, color */
+    transition: 0.2s opacity;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+
+  .button:hover {
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+  }
+
+.button.contact {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 6px;
+  }
+
+  .button.contact:hover {
+    background-color: #1c1c1c;
+    color: #ffffff;
+  }
+
+  a {/* element selector */
+    color: grey;
+  }
+  
+  a:hover {
+    color: white;
+  }
+
+  #my-link {/* id selector */
+    color: green;  
+  }
+  
+  .my-link {/* class selector */
+    color: blue;  
+  }
+
+.no-bullets {
+    list-style-type: none;
+    padding: 8;
+    margin: 8;
+}
+
+.whiteBullets {
+    list-style-type: disc;
+    color: #FFFFFF;
+    padding: 8;
+    margin: 8;
+}

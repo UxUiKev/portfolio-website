@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="img/favicon.svg" rel="shortcut icon">
     <meta charset="UTF-8">
     <meta name="author" content="Kevin Esteves">
-    <meta name="description" content="Explore the UX/UI design portfolio of Kevin Esteves, featuring innovative and user-centric projects. Discover case studies, design thinking processes, and creative solutions that highlight Kevin's expertise in crafting intuitive digital experiences.">
-    <title>Kevin Esteves UX/UI</title>
+    <meta name="description" content="Dive into my collection of UX/UI design projects, showcasing innovative solutions for web and mobile platforms. See how thoughtful design meets real-world challenges.">
+    <title>Kevin Esteves | UX/UI Design Projects</title>
+        <!--Fonts-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
 		<div>
-			<a href="index.html"> <img src="img/logo_light_mode.svg" alt="Your Name" > </a>
+			<a href="index.html"> <img src="img/logo_dark_mode.svg" style="width: auto; height: 48px;" alt="Your Name" > </a>
 			<nav>
-                <ul>
+                <ul class="navigation">
 				<li><a href="index.html">Work</a></li>
 				<li><a href="about.html">About</a></li>
 				<li><a href="contact">Contact</a></li>
@@ -21,48 +34,48 @@
         </div>
     </header>
     <main>
-        <div>
+        <div id="projectSection">
             <picture>
                 <source srcset="img/vela/@1x/vela_app_mockup@1x.png" media="(max-width:767px)">
                 <img src="img/vela/@2x/vela_app_mockup@2x.png" alt="Vela app Mockup">
             </picture>
         </div>
-        <div>
-            <h1>Vela App</h1>
-            <h2>Project Summary</h2>
-            <p>The Vela App is designed to provide intuitively designed and easy-to-understand wind, wave, and weather reports, 
+        <div class="project-card">
+            <h12>Vela App</h12>
+            <h14>Project Summary</h14>
+            <p4>The Vela App is designed to provide intuitively designed and easy-to-understand wind, wave, and weather reports, 
                 forecasts, and statistics for sailors, surfers, divers, and other water sports aficionados. The purpose of the 
                 project was to address common issues faced by these users due to data overload, complex user interfaces, and 
                 inaccurate forecasting in existing apps. Vela App aims to solve these problems with data simplification, user-friendly 
-                design, community-driven content, and advanced forecasting algorithms.</p>
+                design, community-driven content, and advanced forecasting algorithms.</p4>
         </div>
-        <div>
-            <h3>My Role</h3>
-            <p>UX / UI designer</p>
-            <h3>Tutor</h3>
-            <p>Madison Bonds</p>
-            <h3>Year</h3>
-            <p>2024</p>
-            <h3>Platform</h3>
-            <p>IOS</p>
+        <div id="project-contentSection" class="project-card">
+            <h16>My Role</h16>
+            <p5>UX / UI designer</p5>
+            <h16>Tutor</h16>
+            <p5>Madison Bonds</p5>
+            <h16>Year</h16>
+            <p5>2024</p5>
+            <h16>Platform</h16>
+            <p5>IOS</p5>
         </div>
-        <div>  
-            <h2>Context</h2>
-            <p>The context of the project was the growing need for accurate and easily accessible weather and wave data in the field of water 
+        <div id="project-contentSection" class="project-card">  
+            <h15>Context</h15>
+            <p5>The context of the project was the growing need for accurate and easily accessible weather and wave data in the field of water 
                 sports and activities. The project started in January 2024. The team for this project was led by Kevin Esteves 
-                (Lead UX/UI Designer), who undertook this as a solo project.</p>
+                (Lead UX/UI Designer), who undertook this as a solo project.</p5>
         </div>
-        <div>  
-            <h2>Tools</h2>
-            <p>During the UX/UI design process for the Vela App, various tools were used to aid in collaboration, design creation, progress 
+        <div id="project-contentSection" class="project-card">  
+            <h15>Tools</h15>
+            <p5>During the UX/UI design process for the Vela App, various tools were used to aid in collaboration, design creation, progress 
                 tracking, and user behavior analysis. Figma was utilized for creating wireframes and high-fidelity prototypes, InVision for 
-                interactive prototypes, Miro for brainstorming sessions and ideation process, and Google Analytics for user behavior analysis.</p>
-            <p>Overall, these tools played a crucial role in the efficient design process of the Vela App, enabling the team to 
+                interactive prototypes, Miro for brainstorming sessions and ideation process, and Google Analytics for user behavior analysis.</p5>
+            <p5>Overall, these tools played a crucial role in the efficient design process of the Vela App, enabling the team to 
                 collaborate effectively, design a user-friendly interface, track progress, and analyze user behavior, while optimizing 
-                the app's features and functionality.</p>
+                the app's features and functionality.</p5>
         </div>
-        <div>
-            <h1>Stack</h1>
+        <div id="project-contentSection" class="project-card">
+            <h15>Stack</h15>
             <span>
             <img src="img/vela/@1x/notion_icon_@1x.png" alt="Notion Logo">
             <img src="img/vela/@1x/framer_icon_@1x.png" alt="Framer Logo">
@@ -72,135 +85,128 @@
             <img src="img/vela/@1x/ps_icon_@1x.png" alt="Photoshop Logo">
             </span>
         </div>
-        <div>
-            <h2>Target Audience</h2>
-            <ul>
-				<li>Age: 18-45</li>
-                <li>Outdoor Enthusiasts: Individuals passionate about outdoor activities, such as sailing, surfing, hiking, and beach sports.</li>
-                <li>Tech-Savvy: Comfortable using mobile applications and seeking innovative solutions for outdoor experiences.</li>
-                <li>Environmental Awareness: Conscious of the impact of weather conditions on outdoor adventures and environmental changes.</li>
-                <li>Geographical Location: Coastal regions, areas with prevalent outdoor water-based activities.</li>
+        <div id="project-contentSection" class="project-card">
+            <h16>Target Audience</h16>
+            <ul class="whiteBullets">
+				<li><h16>Age:</h16> <p5>18-45</p5></li>
+                <li><h16>Outdoor Enthusiasts:</h16> <p5>Individuals passionate about outdoor activities, such as sailing, surfing, hiking, and beach sports.</p5></li>
+                <li><h16>Tech-Savvy:</h16> <p5>Comfortable using mobile applications and seeking innovative solutions for outdoor experiences.</p5></li>
+                <li><h16>Environmental Awareness:</h16> <p5>Conscious of the impact of weather conditions on outdoor adventures and environmental changes.</p5></li>
+                <li><h16>Geographical Location:</h16> <p5>Coastal regions, areas with prevalent outdoor water-based activities.</p5></li>
             </ul>
         </div>
-        <div>
-            <h2>Risk / Opportunity</h2>
-            <p>The primary risk revolves around the potential saturation of the weather app market, given the presence of established 
+        <div id="project-contentSection" class="project-card">
+            <h15>Risk / Opportunity</h15>
+            <p5>The primary risk revolves around the potential saturation of the weather app market, given the presence of established 
                 platforms. These platforms already cater to specific water-based activities, posing a challenge for our app to distinguish 
                 itself. However, there is an opportunity to carve a niche in this competitive landscape. While the existing apps dominate 
                 in their specialized areas, they might overlook the broader market for users seeking a consolidated, comprehensive weather 
-                experience.</p>
+                experience.</p5>
         </div>
-        <div>
-            <h2>Conclusions</h2>
-            <p>Despite the competition, there is a viable opportunity to create a distinctive weather app that caters to a broader 
+        <div id="project-contentSection" class="project-card">
+            <h15>Conclusions</h15>
+            <p5>Despite the competition, there is a viable opportunity to create a distinctive weather app that caters to a broader 
                 audience seeking a comprehensive weather solution. The key lies in delivering a user-friendly interface, ensuring our 
                 app stands out amidst the established platforms. A robust marketing strategy will be crucial to gain visibility and 
-                attract customers who may find our app more appealing for its comprehensive approach to weather conditions.</p>
+                attract customers who may find our app more appealing for its comprehensive approach to weather conditions.</p5>
         </div>
-        <div>
+        <div id="project-contentSection" class="project-card">
             <picture>
                 <source srcset="img/vela/@1x/wireframes_mockup_@1x.png" media="(max-width:767px)">
                 <img src="img/vela/@2x/wireframes_mockup_@2x.png" alt="Wireframes Mockup">
             </picture>
         </div>
-        <div>
-            <p>The goal of the Vela App project is to create a seamless, visually appealing, and user-friendly experience that aligns 
-                with the app's objectives, promotes brand consistency, and supports the needs of water sports enthusiasts.</p>
+        <div id="project-contentSection" class="project-card">
+            <p5>The goal of the <span class="p2-style"> Vela App </span> project is to create a seamless, visually appealing, and user-friendly experience that aligns 
+                with the app's objectives, promotes brand consistency, and supports the needs of water sports enthusiasts.</p5>
         </div>
-        <div>
-            <h2>Exploration & Problem Statement</h2>
-            <p>The problem statement for the Vela App is based on user research conducted through methods such as user interviews 
+        <div id="project-contentSection" class="project-card">
+            <h15>Exploration & Problem Statement</h15>
+            <p5>The problem statement for the Vela App is based on user research conducted through methods such as user interviews 
                 and surveys. The key findings from the research reveal that users of existing weather and wave forecast apps feel 
                 overwhelmed with the vast amount of data, find the interfaces too complex, and often face inaccurate forecasting. 
                 There was also a lack of community-driven content. The team conducted 15 in-depth user interviews and distributed a 
-                survey to over 200 water sports enthusiasts.</p>
-            <p>The research revealed several pain points:</p>
-            <div>
-                <div>
-                    <h3>Data Overload</h3>
-                    <p>Users felt overwhelmed by the vast amount of data.</p>
-                </div>
-                <div>
-                    <h3>Interface Complexity</h3>
-                    <p>The interfaces of existing apps were too complex.</p>
-                </div>
-                <div>
-                    <h3>Community Content Gap</h3>
-                    <p>There was a lack of community-driven content.</p>
-                </div>
-                <div>
-                    <h3>Inaccurate Forecasts</h3>
-                    <p>Forecasts were often inaccurate.</p>
-                </div>
-            </div>
-        </div>
-        <div>
-            <h2>Design Process</h2>
-            <p>We adopted the design thinking framework for the design process. This involved empathizing with users, 
+                survey to over 200 water sports enthusiasts.</p5>
+            <p5>The research revealed several pain points:</p5>
+            <div id="project-contentSection" class="project-card">
+                <ul class="whiteBullets">
+                    <li><h16>Data Overload</h16> </li>
+                    </li><p5>Users felt overwhelmed by the vast amount of data.</p5></li>
+                    <li><h16>Interface Complexity</h16></li>
+                    </li><p5>The interfaces of existing apps were too complex.</p5></li>
+                    <li><h16>Community Content Gap</h16></li> 
+                    </li><p5>There was a lack of community-driven content.</p5></li>
+                    <li><h16>Inaccurate Forecasts</h16></li> 
+                    </li><p5>Forecasts were often inaccurate.</p5></li>
+                </ul>
+        <div id="projectSection" class="project-card">
+            <h14>Design Process</h14>
+            <p4>We adopted the design thinking framework for the design process. This involved empathizing with users, 
                 defining the problem, ideating, prototyping, and implementing. User research and feedback helped us understand 
                 their needs and constraints, and we generated design ideas through brainstorming and collaboration. Prototypes 
-                were tested with real users to gather feedback for iterative design improvements.</p>
+                were tested with real users to gather feedback for iterative design improvements.</p4>
         </div>
-        <div>
+        <div id="projectSection" class="project-card">
             <picture>
                 <source srcset="img/vela/@1x/dt_img_@1x.png" media="(max-width:767px)">
                 <img src="img/vela/@2x/dt_img_@2x.png" alt="Design Thinking Method">
             </picture>
         </div>
-        <div>
-            <h2>User Research Data</h2>
-            <ul>
-				<li>1. Forecast Accessibility and Preferences: 
-                    Understand users' methods of obtaining weather forecasts before 
+        <div id="projectSection" class="project-card">
+            <h14>User Research Data</h14>
+            <ul class="whiteBullets">
+                <li><h14>1. Forecast Accessibility and Preferences:</h14> </li>
+                </li><p4>Understand users' methods of obtaining weather forecasts before 
                     sailing or surfing, exploring their preferences in forecast presentation. Learn about the preferred channels, 
-                    platforms, and specific information users seek when planning water activities.</li>
-                <li>2. User Attitudes and Platform Usage: 
-                    Identify users' attitudes and behaviors when planning a day for sailing or 
+                    platforms, and specific information users seek when planning water activities.</p4></li>
+                <li><h14>2. User Attitudes and Platform Usage:</h14></li>
+                </li><p4>Identify users' attitudes and behaviors when planning a day for sailing or 
                     surfing, including the types of apps or platforms they commonly use. Explore user sentiments, app usage patterns, 
-                    and the frequency of checking forecasts during an average day, gauging their level of engagement.</li>
-                <li>3. Forecast Tolerance and Pain Points: 
-                    Evaluate the threshold for forecast acceptance, understanding the parameters 
+                    and the frequency of checking forecasts during an average day, gauging their level of engagement.</p4></li>
+                <li><h14>3. Forecast Tolerance and Pain Points:</h14></li> 
+                </li><p4>Evaluate the threshold for forecast acceptance, understanding the parameters 
                     that define an acceptable, no-go, or perfect forecast for users. Determine the factors that influence users' 
                     decisions to engage in water activities, uncovering any frustrations or challenges they encounter during the 
-                    preparation process.</li>
+                    preparation process.</p4></li>
             </ul>
         </div>
-        <div>
-            <h2>Interviews</h2>
-            <p>During the interviews, participants provided valuable insights into their approach to weather forecasts and outdoor 
+        <div id="projectSection" class="project-card">
+            <h14>Interviews</h14>
+            <p4>During the interviews, participants provided valuable insights into their approach to weather forecasts and outdoor 
                 activities. The conversations were insightful, covering preferences, sources of information, and decision-making 
-                processes related to weather conditions.</p>
+                processes related to weather conditions.</p4>
         </div>
-        <div>
-            <h2>Card Sorting</h2>
-            <p>Out of the 11 participants initially engaged in the card sorting exercise, only 5 successfully completed the study 
-                due to the screening question filtering out participants with limited experience or insight into weather forecast apps.</p>
+        <div id="projectSection" class="project-card">
+            <h14>Card Sorting</h14>
+            <p4>Out of the 11 participants initially engaged in the card sorting exercise, only 5 successfully completed the study 
+                due to the screening question filtering out participants with limited experience or insight into weather forecast apps.</p4>
         </div>
-        <div>
-            <h2>Key Findings</h2>
-            <p>During the interviews, participants provided valuable insights into their approach to weather forecasts and outdoor 
+        <div id="projectSection" class="project-card">
+            <h14>Key Findings</h14>
+            <p4>During the interviews, participants provided valuable insights into their approach to weather forecasts and outdoor 
                 activities. The conversations were insightful, covering preferences, sources of information, and decision-making 
-                processes related to weather conditions.</p>
-                <ul>
-                    <li>Based on user interviews, participants prefer local insights for weather conditions, relying on various sources 
-                        including local individuals and online platforms.</li>
-                    <li>Crucial factors influencing decisions include forecast accuracy and timeliness. Users value user-friendly interfaces 
-                        in weather apps and often change plans based on accurate forecasts.</li>
-                    <li>They check weather updates frequently during outdoor activities and consult multiple sources for comprehensive information. 
-                        Despite challenges and frustrations, users prefer up-to-date weather information for informed decisions.</li>
-                </ul>
+                processes related to weather conditions.</p4>
+
+            <ul class="whiteBullets">
+                    <li><p4>Based on user interviews, participants prefer local insights for weather conditions, relying on various sources 
+                        including local individuals and online platforms.</p4></li>
+                    <li><p4>Crucial factors influencing decisions include forecast accuracy and timeliness. Users value user-friendly interfaces 
+                        in weather apps and often change plans based on accurate forecasts.</p4></li>
+                    <li><p4>They check weather updates frequently during outdoor activities and consult multiple sources for comprehensive information. 
+                        Despite challenges and frustrations, users prefer up-to-date weather information for informed decisions.</p4></li>
+            </ul>
         </div>
-        <div>
-            <h2>Affinity Map</h2>
+        <div id="projectSection" class="project-card">
+            <h14>Affinity Map</h14>
             <picture>
                 <source srcset="img/vela/@1x/affinity_map_@1x.png" media="(max-width:767px)">
                 <img src="img/vela/@2x/affinity_map_@2x.png" alt="Affinity Map">
             </picture>
         </div>
-        <div>
-            <h2>Solution</h2>
-            <p>User stories within this project determine the functionality of the mobile application. These user stories were determined by three factors: 
-                user needs identified during interviews, the current web platform's functionality, and the company's management vision.</p>
+        <div id="project-contentSection" class="project-card">
+            <h15>Solution</h15>
+            <p5>User stories within this project determine the functionality of the mobile application. These user stories were determined by three factors: 
+                user needs identified during interviews, the current web platform's functionality, and the company's management vision.</p5>
             <picture>
                 <source srcset="img/vela/@1x/user_stories_@1x.png" media="(max-width:767px)">
                 <img src="img/vela/@2x/user_stories_@2x.png" alt="User Stories">
@@ -218,136 +224,136 @@
                 <img src="img/vela/@2x/journey_map_@2x.png" alt="Journey Map">
             </picture>
         </div>
-        <div>
-            <h2>Information Architecture</h2>
-            <p>Based on the user stories, we defined the information architecture, represented by the following sitemap:</p>
+        <div id="project-contentSection" class="project-card">
+            <h15>Information Architecture</h15>
+            <p5>Based on the user stories, we defined the information architecture, represented by the following sitemap:</p5>
             <picture>
                 <source srcset="img/vela/@1x/first_sitemap_@1x.png" media="(max-width:767px)">
                 <img src="img/vela/@2x/first_sitemap_@2x.png" alt="First Site Map">
             </picture>
         </div>
-        <div>
-            <h2>Initial Wireframes</h2>
-            <p>The next step after information architecture was the creative approach to user interface design. In this activity, 
+        <div id="project-contentSection" class="project-card">
+            <h15>Initial Wireframes</h15>
+            <p5>The next step after information architecture was the creative approach to user interface design. In this activity, 
                 we are at the intersection between idea generation and prototyping. The main difference compared to the final 
                 prototype is the emphasis on the visual aspect of design, while the structure and pages of the application remain 
-                consistent with the final version.</p>
-            <h2>User Flow 1</h2>
-            <p>Get a detailed wave forecast in real-time for a specific location.</p>
+                consistent with the final version.</p5>
+            <h15>User Flow 1</h15>
+            <p5>Get a detailed wave forecast in real-time for a specific location.</p5>
             <picture>
                 <source srcset="img/vela/@1x/user_flow_one_@1x.png" media="(max-width:767px)">
                 <img src="img/vela/@2x/user_flow_one_@2x.png" alt="User Flow 1">
             </picture>
-            <h2>User Flow 2</h2>
-            <p>Play the time-lapse to observe how the forecast has changed hour by hour.</p>
+            <h15>User Flow 2</h15>
+            <p5>Play the time-lapse to observe how the forecast has changed hour by hour.</p5>
             <picture>
                 <source srcset="img/vela/@1x/user_flow_tow_@1x.png" media="(max-width:767px)">
                 <img src="img/vela/@2x/user_flow_two_@2x.png" alt="User Flow 2">
             </picture>
-            <h2>User Flow 3</h2>
-            <p>Find the perfect surfing spot.</p>
+            <h15>User Flow 3</h15>
+            <p5>Find the perfect surfing spot.</p5>
             <picture>
                 <source srcset="img/vela/@1x/user_flow_three_@1x.png" media="(max-width:767px)">
                 <img src="img/vela/@2x/user_flow_three_@2x.png" alt="User Flow 3">
             </picture>
         </div>
-        <div>
-            <h2>Rapid Prototyping and Iterations</h2>
-            <p>After implementing rapid prototyping on the initial wireframes, we gained valuable insights early in the project. 
+        <div id="project-contentSection" class="project-card">
+            <h15>Rapid Prototyping and Iterations</h15>
+            <p5>After implementing rapid prototyping on the initial wireframes, we gained valuable insights early in the project. 
                 Testing revealed navigation issues, leading us to revise the navigation structure. By incorporating familiar interface 
                 patterns, we enhanced user engagement on the dashboard. Our focus was on creating a user-friendly interface with smooth 
-                navigation and intuitive information architecture.</p>
+                navigation and intuitive information architecture.</p5>
         </div>
-        <div>
-            <h2>Updated Sitemap</h2>
+        <div id="project-contentSection" class="project-card">
+            <h15>Updated Sitemap</h15>
             <picture>
                 <source srcset="img/vela/@1x/sitemap_@1x.png" media="(max-width:767px)">
                 <img src="img/vela/@2x/sitemap_@2x.png" alt="Updated Sitemap">
             </picture>
         </div>
-        <div>
-            <h2>Updated Mid-Fidelity Wireframes</h2>
+        <div id="project-contentSection" class="project-card">
+            <h15>Updated Mid-Fidelity Wireframes</h15>
             <picture>
                 <source srcset="img/vela/@1x/mid-fi_wfrms_@1x.png" media="(max-width:767px)">
                 <img src="img/vela/@2x/mid_fi_wfrms_@2x.png" alt="Updated Mid-Fidelity Wireframes">
             </picture>
         </div>
-        <div>
+        <div id="project-contentSection" class="project-card">
             <a href="https://drive.google.com/file/d/1v9c6jTq6q8WN7kwMHWRg9VCHjzXwGrJN/view" target="_blank"><picture>
                 <source srcset="img/vela/@1x/styleguide_@1x.png" media="(max-width:767px)">
                 <img src="img/vela/@2x/styleguide_@2x.png" alt="Style Guide link">
             </picture> </a>
         </div>
-        <div>
+        <div id="project-contentSection" class="project-card">
             <div>
-                <h2>High-fidelity Prototyping</h2>
-                <p>The main deliverables of the design process are the high-fidelity prototypes and design system in Figma to 
+                <h15>High-fidelity Prototyping</h15>
+                <p5>The main deliverables of the design process are the high-fidelity prototypes and design system in Figma to 
                     maintain consistency across the platform, improving the learnability of the interfaces and boosting the 
-                    development process.</p>
+                    development process.</p5>
             </div>
-            <div>
+            <div id="project-contentSection" class="project-card">
                 <picture>
                     <source srcset="img/vela/@1x/high-fi_wfrms_@1x.png" media="(max-width:767px)">
                     <img src="img/vela/@2x/high_fi_wfrms_@2x.png" alt="Updated Mid-Fidelity Wireframes">
                 </picture> 
             </div>
         </div>
-        <div>
-            <h2>Evaluation</h2>
-            <p>The usability testing sessions were conducted using the Figma prototype on testers' mobile devices. 
+        <div id="project-contentSection" class="project-card">
+            <h15>Evaluation</h15>
+            <p5>The usability testing sessions were conducted using the Figma prototype on testers' mobile devices. 
                 The testing scenario was divided into five subtopics: registration and login, overall app impressions, 
                 weather data interpretation, customization of the dashboard, and community engagement. Testers were also 
-                invited to complete an SUS questionnaire and share open-ended feedback.</p>
+                invited to complete an SUS questionnaire and share open-ended feedback.</p5>
         </div>
-        <div>
+        <div id="project-contentSection" class="project-card">
             <a href="https://drive.google.com/file/d/1I7p2AajyPf9jQ-uCkG1oXKYZVVanf06v/view?usp=drive_link" target="_blank">Link to Usability Test Plan</a>
         </div>
-        <div>
+        <div id="project-contentSection" class="project-card">
             <div>
-                <h3>Metrics</h3>
-                <p>Jakob Nielsen's Severity Scale used to prioritize the severity of usability issues.</p>
+                <h16>Metrics</h16>
+                <p5>Jakob Nielsen's Severity Scale used to prioritize the severity of usability issues.</p5>
             </div>
             <div>
-                <h3>Affinity Diagram</h3>
-                <p>Employed to identify patterns and themes in user feedback.</p>
+                <h16>Affinity Diagram</h16>
+                <p5>Employed to identify patterns and themes in user feedback.</p5>
             </div>
             <div>
-                <h3>Rainbow Spreadsheet</h3>
-                <p>Six users with varying levels of experience and familiarity with digital applications.</p>
+                <h16>Rainbow Spreadsheet</h16>
+                <p5>Six users with varying levels of experience and familiarity with digital applications.</p5>
             </div>
             <div>
-                <h3>Purpose</h3>
-                <p>To evaluate the Vela App's prototype, focusing on user experience and overall usability.</p>
+                <h16>Purpose</h16>
+                <p5>To evaluate the Vela App's prototype, focusing on user experience and overall usability.</p5>
             </div>
             <div>
-                <h3>Objective</h3>
-                <p>To identify critical usability issues and gather insights for design and functionality enhancements.</p>
+                <h16>Objective</h16>
+                <p5>To identify critical usability issues and gather insights for design and functionality enhancements.</p5>
             </div>
             <div>
-                <h3>Participants</h3>
-                <p>Six users with varying levels of experience in sailing and familiarity with digital applications.</p>
+                <h16>Participants</h16>
+                <p5>Six users with varying levels of experience in sailing and familiarity with digital applications.</p5>
             </div>
         </div>
-        <div>
+        <div id="project-contentSection" class="project-card">
             <a href="https://drive.google.com/file/d/1pK2g0SXOZhRwg-f6VRcLe1gsU0eYpupG/view?usp=drive_link" target="_blank">Link to Affinity Diagram and Rainbow Spreadsheet</a>
         </div>
-        <div>
-            <h2>Iterations & Recommendations</h2>
-            <p>Based on the comprehensive and continuous usability testing sessions, several iterations were made to improve the prototype.</p>
-            <p>Future iterations will focus on additional functionalities such as advanced forecasting algorithms and enhanced community 
-                features. Close collaboration with developers is essential for the successful implementation of these changes.</p>
+        <div id="project-contentSection" class="project-card">
+            <h15>Iterations & Recommendations</h15>
+            <p5>Based on the comprehensive and continuous usability testing sessions, several iterations were made to improve the prototype.</p5>
+            <p5>Future iterations will focus on additional functionalities such as advanced forecasting algorithms and enhanced community 
+                features. Close collaboration with developers is essential for the successful implementation of these changes.</p5>
                 <picture>
                     <source srcset="img/vela/@1x/final_wfrms_@1x.png" media="(max-width:767px)">
                     <img src="img/vela/@2x/final_wfrms_@2x.png" alt="Updated Sitemap">
                 </picture>
         </div>
-        <div>
+        <div id="project-contentSection" class="project-card">
             <a href="https://www.figma.com/proto/gaVEKM8b3hhvZ9QsaEfGnw/Vela-App?page-id=0%3A1&node-id=77-13332&node-type=CANVAS&viewport=-2312%2C-1169%2C0.25&t=8HkkmKe8NGmdmCyW-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=75%3A12965&show-proto-sidebar=1" target="_blank">Click here to use full prototype</a>  
         </div>
     </main>
     <footer id="contact">
         <div>
-            <h2>Get in touch</h2>
+            <h5>Get in touch</h5>
             <div>
                 <a href="mailto:kevin_esteves@hotmail.com"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 9V2L10 4" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
