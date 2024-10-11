@@ -30,12 +30,27 @@ Purple: #9a72c4
     display: flex;
     justify-content: center; /* Centers the icons in the container */
     align-items: center;
-    gap: 16px; /* This sets a 16px space between the items */
+    gap: 44px; /* This sets a 16px space between the items */
     flex-wrap: wrap; /* Ensures the icons wrap to the next line if the screen is too narrow */
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center; /* Center align the items */
+    text-align: center; /* Center the text under the icon */
+    gap: 8px;
+}
+
+.icon-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
     position: sticky; /* Makes the header sticky */
+    padding-top: 20px;
     top: 0; /* Sticks to the top of the viewport */
     background-color: rgba(17, 17, 17, 0.923); /* White background with 80% opacity */
     padding: 10px 20px; /* Add some padding */
@@ -45,7 +60,8 @@ header {
 
 #heroSection {
     background-color: #1C1C1C;
-    padding: 1em;
+    padding: 5em 10% 5em;
+    margin: auto;
 }
 
 #projectSection {
@@ -70,6 +86,7 @@ header {
 }
 
 footer {
+    margin: 3em;
     background-color: #FFFFFF;
 }
 
@@ -118,7 +135,7 @@ h1 { /* Presentation index */
     font-weight: 400; /* light */
     font-style: light;
     color: #FFFFFF;
-    letter-spacing: -0.01875em; /* -0.3px / 16px */
+    letter-spacing: 0; /* -0.3px / 16px */
     text-align: left;
     font-size: inherit
 }
@@ -132,6 +149,8 @@ h1 { /* Presentation index */
     letter-spacing: -0.01875em;
     text-align: center; /* Center-align the sliding words */
     line-height: 0; /* Adjust line-height to make it closer to previous text */
+    margin-top: 0;
+    padding-top: 0;
 }
 
 h2 { /* Hey message */
@@ -153,6 +172,7 @@ h2 { /* Hey message */
 }
 
 .h2-white { /* Case Study title dark background */
+    display: block;
     font-family: 'Manrope', sans-serif;
     font-weight: 400; /* regular */
     font-size: 1.5em; /* 24px */
@@ -169,9 +189,12 @@ h3 { /* Featured work title */
     font-size: 1em; /* 16px */
     color: #000000;
     letter-spacing: -0.01875em;
+    margin-left: 1em;
+    margin: auto;
 }
 
 h4 { /* Work cards title */
+    padding-bottom: 0.625em;
     font-family: 'Manrope', sans-serif;
     font-weight: 300; /* regular */
     font-size: 1.25em; /* 20px */
@@ -180,11 +203,13 @@ h4 { /* Work cards title */
 }
 
 .h4-subtitle { /* Project card subtitle */
+    padding-bottom: 0.375em;
     font-family: 'Manrope', sans-serif;
     font-weight: 300; /* light */
     font-size: 0.75em; /* 12px */
     color: #000000;
     letter-spacing: 0;
+    text-align: left;
 }
 
 h5 { /* About titles */
@@ -236,7 +261,7 @@ h6 { /* Project name title */
 .h6-white-title { /* Project page title */
     font-family: 'Manrope', sans-serif;
     font-weight: 300; /* regular */
-    font-size: 1.5em; /* 24px */
+    font-size: 1.375em; /* 22px */
     color: #ffffff;
     letter-spacing: -0.01875em;
     margin-top: 0;
@@ -250,6 +275,7 @@ p { /* base */
     font-size: 1em; /* 16px */
     color: #000000;
     letter-spacing: 0;
+    text-align: left;
 }
 
 .p1 { /* Project card content */
@@ -258,6 +284,7 @@ p { /* base */
     font-size: 0.875em; /* 14px */
     color: #000000;
     letter-spacing: 0;
+    text-align: left;
 }
 
 .p2 { /* Paragraph white color for dark background */
@@ -271,7 +298,7 @@ p { /* base */
 .p3 { /* 16 px lighter paragraph */
     font-family: 'Manrope', sans-serif;
     font-weight: 300; /* light */
-    font-size: 0.875em; /* 14px */
+    font-size: 1.25em;
     color: #000000;
     letter-spacing: 0;
 }
@@ -301,6 +328,7 @@ p { /* base */
 }
 
 .p7 { /* Case study content */
+    margin: 0;
     font-family: 'Manrope', sans-serif;
     font-weight: 200; /* light */
     font-size: 1em; /* 16px */
@@ -309,6 +337,8 @@ p { /* base */
 }
 
 .p7-bold { /* Case study content */
+    margin: 0;
+    padding-bottom: 0.625em;
     font-family: 'Manrope', sans-serif;
     font-weight: 300; /* light */
     font-size: 1em; /* 16px */
@@ -321,12 +351,12 @@ p { /* base */
     display: flex; /* Enables Flexbox */
     justify-content: space-between; /* Aligns items on both ends (logo on the left, nav on the right) */
     align-items: center; /* Vertically center-aligns the logo and nav */
-    padding: 0px; /* Add some padding around the header */
+    padding: 20px; /* Add some padding around the header */
 }
 
 .navigation {
     display: flex; /* Makes the navigation list items display in a row */
-    gap: 16px; /* Adds space between the navigation items */
+    gap: 12px; /* Adds space between the navigation items */
     list-style: none; /* Removes the default list styling */
     margin: 0; /* Removes default margin */
     padding: 0; /* Removes default padding */
@@ -421,12 +451,13 @@ p { /* base */
 }
 
 .casetudy-card {
-    padding: 18px; /* You can adjust this to control the overall padding inside the card */
+    margin: 5em;
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Ensure the content aligns on the left */
     gap: 8px; /* Control the spacing between elements inside the project card */
     margin-bottom: 2em;
+    text-align: center;
 }
 
 .no-bullets {
@@ -453,6 +484,7 @@ p { /* base */
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid #333; /* width of the border, type, color */
+    transition-duration: 0.2s;
     transition: 0.2s opacity;
     border-radius: 6px;
     text-decoration: none;
@@ -468,11 +500,14 @@ p { /* base */
     color: #333;
     border: 1px solid #333;
     border-radius: 6px;
+    transition-duration: 0.2s;
+    transition: 0.2s opacity;
   }
 
   .button.contact:hover {
     background-color: lightgray;
     color: #ffffff;
+    opacity: 0.8;
   }
 
   a {/* element selector */
@@ -502,3 +537,171 @@ p { /* base */
 .whiteBullets li {
     margin-bottom: 16px; /* Space between list items */
 }
+
+/* Mobile-first default styles */
+#workSection {
+    padding: 20px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between cards */
+}
+
+.project-card {
+    width: 100%;
+    padding-bottom: 1.25em;
+    padding-top: 1.25em;
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Ensures that the mockups fill the card's width */
+.project-image {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Automatically adjusts height to maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the full width */
+    border-radius: 4px; /* Optional: to make the images' corners rounded */
+}
+
+/* Media query for larger screens (e.g., tablets and desktops) */
+@media (min-width: 768px) {
+    .projects-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .project-card {
+        flex: 1 1 calc(50% - 20px); /* Each card takes up 50% of the container width */
+    }
+}
+
+/* Apply default padding for all divs on the project page */
+.project-page div {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* For tablet and desktop (min-width: 768px), increase padding */
+@media (min-width: 768px) {
+    .project-page div {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+
+.casestudy-list {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.project_mockup {
+    width: 100%;
+    padding: 20px;
+    border-radius: 1em;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.mockupil img {
+    border-radius: 20px; /* Adjust for desired roundness */
+    width: 100%; /* Optional: ensures the image fills the width of the card */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.logo-container {
+    display: flex;               /* Use Flexbox to arrange logos in a row */
+    flex-wrap: wrap;            /* Allow logos to wrap onto the next line if needed */
+    justify-content: space-between; /* Distribute logos evenly across the row */
+    width: 100%;                /* Make the logo container fill the width of the span */
+}
+
+.logo-container img {
+    width: 2.75em;                /* Set width */
+    height: 2.75em;               /* Set height */
+    object-fit: contain;        /* Maintain aspect ratio */
+}
+
+.datapoints {
+    display: grid;                          /* Use CSS Grid for layout */
+    grid-template-columns: repeat(2, 1fr);  /* Create two equal columns */
+    gap: 20px;                             /* Space between grid items */
+    list-style-type: none;                 /* Remove default list styling */
+    padding: 0;                            /* Remove default padding */
+    width: 100%;                           /* Ensure the ul fills the parent width */
+
+}
+
+.datapoints li {
+    padding: 10px;                         /* Add padding around each list item */
+    border: 1px solid transparent;         /* Optional: add a border (can be adjusted) */
+    box-sizing: border-box;                /* Ensure padding does not affect total width */
+    align-items:center ;
+}
+
+#datapoints {
+    padding: 0;
+}
+
+.about-images {
+    display: flex; /* Use Flexbox to arrange items in a row */
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 16px; /* Space between the images */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.about-images div {
+    flex: 1 1 calc(20% - 16px); /* Set a base size for each image, adjusting for the gap */
+    max-width: calc(20% - 16px); /* Prevent images from exceeding their flex size */
+}
+
+.about-images img {
+    width: 100%; /* Make images responsive to their container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.stack-section {
+    text-align: center; /* Center the title */
+    padding: 20px; /* Add padding around the section */
+}
+
+.stack {
+    display: flex; /* Use Flexbox to create a row */
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: flex-start; /* Align items to the start of the flex container */
+    align-items: center; /* Center logos vertically */
+    width: 100%; /* Ensure the stack fills the parent width */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    gap: 12px; /* Set a 12px gap between logos */
+    max-width: 100%; /* Prevent exceeding the screen width */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.stack img {
+    flex: 0 1 auto; /* Prevent logos from growing, allow shrinking */
+    max-width: calc((100% - (12px * 5)) / 6); /* Each image takes up an equal portion of the row, adjusting for gaps */
+    height: auto; /* Maintain aspect ratio */
+    min-width: 0; /* Prevents flex items from overflowing */
+}
+
+@keyframes color-change {
+    from {fill: #EDC655;}
+    to {fill: #f76414;}
+  }
+
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
