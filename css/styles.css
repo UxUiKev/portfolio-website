@@ -19,6 +19,10 @@ Blue: #6da3d9
 Purple: #9a72c4
 */
 
+* {
+    box-sizing: border-box;
+  }
+
 /* Contact */
 .icon-list {
     list-style: none;
@@ -487,7 +491,8 @@ p { /* base */
     color: blue;  
   }
 
-  .whiteBullets {
+
+.whiteBullets {
     list-style-type: disc; /* Style for the bullet points */
     color: #FFFFFF; /* Text color */
     padding: 20px; /* Padding around the list */
