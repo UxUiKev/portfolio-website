@@ -23,7 +23,12 @@ Purple: #9a72c4
     box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth;
+}
+
 /* Contact */
+
 .icon-list {
     list-style: none;
     padding: 0;
@@ -60,7 +65,7 @@ header {
 
 #heroSection {
     background-color: #1C1C1C;
-    padding: 5em 10% 5em;
+    padding: 10em 10% 10em;
     margin: auto;
 }
 
@@ -186,11 +191,13 @@ h2 { /* Hey message */
 h3 { /* Featured work title */
     font-family: 'Manrope', sans-serif;
     font-weight: 300; /* regular */
-    font-size: 1em; /* 16px */
+    font-size: 1.25em; /* 16px */
     color: #000000;
     letter-spacing: -0.01875em;
-    margin-left: 1em;
-    margin: auto;
+    margin-left: 2em;
+    padding-top: 1em;
+    padding-bottom: 0;
+    text-align: left;
 }
 
 h4 { /* Work cards title */
@@ -303,6 +310,13 @@ p { /* base */
     letter-spacing: 0;
 }
 
+.p-footer { /* 16 px lighter paragraph */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300; /* light */
+    font-size: 1em;
+    color: #000000;
+    letter-spacing: 0;
+}
 .p4 { /* 18 px lighter paragraph */
     font-family: 'Inter', sans-serif;
     font-weight: 300; /* light */
@@ -692,10 +706,17 @@ p { /* base */
     min-width: 0; /* Prevents flex items from overflowing */
 }
 
-@keyframes color-change {
-    from {fill: #EDC655;}
-    to {fill: #f76414;}
+.svg-animation {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
+
+  @keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+  } 
 
   .sun {
     animation-duration: 4s;
@@ -704,4 +725,25 @@ p { /* base */
     animation-direction: alternate;
     animation-timing-function: linear;
   }
-
+  
+  @keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+  }
+  
+  .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+  }
+  
+  .cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+  }
