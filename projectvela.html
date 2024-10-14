@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="img/favicon.svg" rel="shortcut icon">
     <meta charset="UTF-8">
     <meta name="author" content="Kevin Esteves">
@@ -24,13 +25,14 @@
     <header>
         <div class="header-container">
             <a href="index.html">
-                <img src="img/kev..svg" style="width: auto; height: 18px;" alt="Your Name">
+                <img src="img/kev..svg" class="logo" alt="Your Name">
             </a>
             <nav>
-                <ul class="navigation">
+                <ul class="navigation navtoggle">
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="contact">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                 </ul>
             </nav>
         </div>
@@ -435,5 +437,10 @@
             </ul>
         </div>
     </footer>
+<script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

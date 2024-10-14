@@ -55,18 +55,24 @@ Purple: #9a72c4
 
 header {
     position: sticky; /* Makes the header sticky */
-    padding-top: 20px;
     top: 0; /* Sticks to the top of the viewport */
     background-color: rgba(17, 17, 17, 0.923); /* White background with 80% opacity */
-    padding: 10px 20px; /* Add some padding */
+    padding: 20px 30px; /* Add some padding */
     z-index: 1000; /* Ensures it stays above other content */
     transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
 #heroSection {
     background-color: #1C1C1C;
-    padding: 10em 10% 10em;
+    padding: 10em 100px; /* Default padding for larger screens */
     margin: auto;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 640px) {
+    #heroSection {
+        padding: 10em 20px; /* Padding for mobile devices */
+    }
 }
 
 #projectSection {
@@ -115,14 +121,21 @@ html {
     font-family: inherit;
 }
 
-h1 { /* Presentation index */
+h1 {
     font-family: 'Manrope', sans-serif;
     font-weight: 200; /* light */
     font-style: light;
-    font-size: 2.125em; /* 36px / 16px = 2.25em */
+    font-size: 2.125em; /* Default size for desktop */
     color: #FFFFFF;
     letter-spacing: -0.01875em; /* -0.3px / 16px */
     text-align: center;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 640px) {
+    h1 {
+        font-size: 2.125em; /* 34px for mobile */
+    }
 }
 
 .h1-about { /* Presentation about page */
@@ -145,17 +158,34 @@ h1 { /* Presentation index */
     font-size: inherit
 }
 
-.sliding-style { /* Sliding words */
+.sliding-style {
     font-family: 'Lora', serif;
     font-weight: 300; /* regular italic */
     font-style: italic;
-    font-size: 2.125em; 
+    font-size: 2.125em; /* Default size for desktop */
     color: #9a72c4; /* Dynamic purple, blue, pink */
     letter-spacing: -0.01875em;
     text-align: center; /* Center-align the sliding words */
     line-height: 0; /* Adjust line-height to make it closer to previous text */
     margin-top: 0;
     padding-top: 0;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 640px) {
+    .sliding-style {
+        font-size: 2.125em; /* 34px for mobile */
+    }
+}
+
+/* Media query for larger screens */
+@media (min-width: 641px) {
+    h1 {
+        font-size: 3.5em; /* 56px for desktop */
+    }
+    .sliding-style {
+        font-size: 3.5em; /* 56px for desktop */
+    }
 }
 
 h2 { /* Hey message */
@@ -359,17 +389,37 @@ p { /* base */
     color: #ffffff;
     letter-spacing: 0em;
 }
+
 .header-container {
     font-family: 'Inter', sans-serif;
-    font-size: 0.875em; /* 14px */
+    font-size: 0.875em; /* Default size for mobile (14px) */
     display: flex; /* Enables Flexbox */
     justify-content: space-between; /* Aligns items on both ends (logo on the left, nav on the right) */
     align-items: center; /* Vertically center-aligns the logo and nav */
-    padding: 20px; /* Add some padding around the header */
+    padding: 8px; /* Add some padding around the header */
+}
+
+/* Media query for larger screens */
+@media (min-width: 641px) {
+    .header-container {
+        font-size: 1em; /* Increase size for desktop (16px) */
+    }
+}
+
+.logo {
+    width: auto; /* Maintain the aspect ratio */
+    height: 18px; /* Default height for mobile */
+}
+
+/* Media query for larger screens */
+@media (min-width: 641px) {
+    .logo {
+        height: 24px; /* Adjust height for desktop */
+    }
 }
 
 .navigation {
-    display: flex; /* Makes the navigation list items display in a row */
+    display: flex; /* Keep the flex display for larger screens */
     gap: 12px; /* Adds space between the navigation items */
     list-style: none; /* Removes the default list styling */
     margin: 0; /* Removes default margin */
@@ -380,11 +430,11 @@ p { /* base */
     margin: 0; /* Ensure there's no additional margin on the list items */
 }
 
+/* Base styles for links */
 .navigation a {
     text-decoration: none; /* Removes the underline from links */
     font-size: 16px;
     color: lightgray; /* Default color */
-    text-decoration: none; /* Removes underline */
     transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
@@ -400,6 +450,36 @@ p { /* base */
     color: white; /* Active link color */
 }
 
+/* Hide navigation items except for the hamburger icon on mobile */
+.navtoggle li:not(:last-child) {
+    display: none; /* Hide all items except the last (hamburger) */
+}
+
+.navtoggle li .icon {
+    font-size: 20px;
+  }
+
+/* Media query for larger screens */
+@media (min-width: 641px) {
+    .navtoggle li:not(:last-child) {
+        display: inline-block; /* Show all items */
+    }
+    .navtoggle li:last-child {
+        display: none; /* Hide the hamburger icon */
+    }
+    .navigation {
+        flex-direction: row; /* Display items in a row */
+    }
+}
+
+/* Additional media query for smaller screens */
+@media (max-width: 640px) {
+    .navigation {
+        flex-direction: column; /* Stack items vertically on mobile */
+    }
+}
+
+/* Font size adjustments */
 @media (min-width: 768px) {
     html {
         font-size: 18px; /* Tablet base font size */
@@ -747,3 +827,29 @@ p { /* base */
   .cloud-back {
     animation: 34s cloud-move-reverse infinite alternate linear;
   }
+
+/* Style for the icon class */
+.icon {
+    display: inline-block; /* Ensure the icon is treated as a block for spacing */
+    cursor: pointer; /* Show pointer on hover */
+    color: lightgray; /* Icon color */
+    font-size: 24px; /* Adjust the size of the icon */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Change color on hover */
+.icon:hover {
+    color: darkgray; /* Change color when hovered */
+}
+
+/* Style for Font Awesome bars icon specifically */
+.fas.fa-bars {
+    /* Additional styles specific to the bars icon can be placed here */
+}
+
+/* Media query to adjust icon size for mobile */
+@media (max-width: 768px) {
+    .icon {
+        font-size: 20px; /* Smaller size for mobile screens */
+    }
+}
