@@ -54,7 +54,7 @@ var myself = {
 
 console.log(myself);
 
-function add(number1, number2) {
+function addd(number1, number2) {
     return number1 + number2;
   }
 

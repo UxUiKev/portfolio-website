@@ -124,7 +124,6 @@ html {
 h1 {
     font-family: 'Manrope', sans-serif;
     font-weight: 200; /* light */
-    font-style: light;
     font-size: 2.125em; /* Default size for desktop */
     color: #FFFFFF;
     letter-spacing: -0.01875em; /* -0.3px / 16px */
@@ -141,7 +140,6 @@ h1 {
 .h1-about { /* Presentation about page */
     font-family: 'Manrope', sans-serif;
     font-weight: 400; /* light */
-    font-style: light;
     font-size: 1.75em; /* 36px / 16px = 2.25em */
     color: #BFBFBF;
     letter-spacing: -0.01875em; /* -0.3px / 16px */
@@ -151,7 +149,6 @@ h1 {
 .h1-aboutRemarked { /* Presentation about page */
     font-family: 'Manrope', sans-serif;
     font-weight: 400; /* light */
-    font-style: light;
     color: #FFFFFF;
     letter-spacing: 0; /* -0.3px / 16px */
     text-align: left;
@@ -352,14 +349,14 @@ p { /* base */
     font-weight: 300; /* light */
     font-size: 0.875em; /* 14px */
     color: #BFBFBF;
-    letter-spacing: 0.5;
+    letter-spacing: 0.05em;
 }
 
 .p4-Remarked { /* 18 px lighter paragraph */
     font-family: 'Inter', sans-serif;
     font-weight: 300; /* light */
     color: #ffffff;
-    letter-spacing: 0.5;
+    letter-spacing: 0.05em;
     font-size: inherit
 }
 
