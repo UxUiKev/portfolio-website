@@ -21,7 +21,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body class="project-vela-page">
     <header>
         <div class="header-container">
             <a href="index.html">
@@ -32,12 +32,16 @@
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    <!-- The icon with a data attribute to track its current state -->
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                        <i class="fas fa-bars" id="menuIcon"></i>
+                    </a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main id="project-contentSection">
+    <button id="backToTopBtn" onclick="scrollToTop()">↑</button>
     <div id="projectSection">
         <div class="project_mockup">
             <picture class="mockupil">

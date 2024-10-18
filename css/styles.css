@@ -19,6 +19,27 @@ Blue: #6da3d9
 Purple: #9a72c4
 */
 
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100; /* Make sure the button is on top of other elements */
+    background-color: #333; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+#backToTopBtn:hover {
+    opacity: 1; /* Full opacity on hover */
+}
+
 * {
     box-sizing: border-box;
   }
@@ -80,6 +101,22 @@ header {
     padding: 0px;
 }
 
+#secondproject-picture {
+    height: 10.855em; /* Maintain aspect ratio on mobile */
+    width: 18.45em;   /* Allow it to adjust naturally on mobile */
+}
+
+@media (min-width: 768px) { /* Desktop styles */
+    #secondproject-picture {
+        height: 100%; /* Allow height to adjust automatically */
+        width: 100%;  /* Make the SVG fill the width of its container */
+    }
+}
+
+.index-image {
+    align-items: center;
+    height: 100%;
+}
 
 #workSection {
     background-color: #ffffff;
@@ -252,6 +289,7 @@ h5 { /* About titles */
     font-size: 1.125em; /* 18px */
     color: #FFFFFF;
     letter-spacing: -0.01875em;
+    margin: 0;
 }
 
 .h5-subtitle { /* About sub titles */
@@ -269,6 +307,9 @@ h5 { /* About titles */
     color: grey;
     letter-spacing: -0.01875em;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0px;
 }
 
 h6 { /* Project name title */
@@ -392,8 +433,9 @@ p { /* base */
     font-size: 0.875em; /* Default size for mobile (14px) */
     display: flex; /* Enables Flexbox */
     justify-content: space-between; /* Aligns items on both ends (logo on the left, nav on the right) */
-    align-items: center; /* Vertically center-aligns the logo and nav */
-    padding: 8px; /* Add some padding around the header */
+    padding: 0px; /* Add some padding around the header */
+    align-items: center;
+    margin: auto;
 }
 
 /* Media query for larger screens */
@@ -499,13 +541,41 @@ p { /* base */
     text-align: center; /* Center align text within the container */
 }
 
+.casestudy-card{
+    text-align: center;
+}
+
+
+
 .project-card {
-    padding: 18px; /* You can adjust this to control the overall padding inside the card */
+    padding: 18px 20px; /* Default padding */
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Ensure the content aligns on the left */
     gap: 8px; /* Control the spacing between elements inside the project card */
     margin-bottom: 2em;
+}
+
+@media (min-width: 768px) {
+    .project-card {
+        padding: 18px 10px; /* Apply for all pages on desktop */
+    }
+}
+
+/* Specific styles for index.html */
+.index-page .project-card {
+    padding: 18px 20px; /* Maintain original padding */
+}
+
+/* Specific styles for project vela.html */
+.project-vela-page .project-card {
+    padding: 20px 20px; /* 20px padding on mobile */
+}
+
+@media (min-width: 768px) {
+    .project-vela-page .project-card {
+        padding: 18px 100px; /* 100px horizontal padding on desktop */
+    }
 }
 
 .project-card h4, 
@@ -528,7 +598,8 @@ p { /* base */
 }
 
 .project-image {
-    width: 100%; /* Adjust image size as needed */
+    width: auto; /* Adjust image size as needed */
+    height: 100%;
 }
 
 .project-title, .project-subtitle, .project-description, .read-more, .contact {
@@ -538,7 +609,21 @@ p { /* base */
 
 .about-section {
     margin-bottom: 16px; /* Adjust the bottom margin as needed */
-    padding: 18px;
+    padding: 18px; /* Default padding (top and bottom) */
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+    .about-section {
+        padding: 18px 20px; /* 20px horizontal padding on mobile */
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+    .about-section {
+        padding: 18px 100px; /* 100px horizontal padding on desktop */
+    }
 }
 
 .casetudy-card {
@@ -687,6 +772,7 @@ p { /* base */
     padding: 0;
     margin: 0;
     text-align: center;
+    align-items: center;
 }
 
 .project_mockup {
@@ -739,6 +825,7 @@ p { /* base */
 
 .about-images {
     display: flex; /* Use Flexbox to arrange items in a row */
+    padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
     justify-content: center; /* Center items horizontally */
@@ -767,6 +854,7 @@ p { /* base */
     display: flex; /* Use Flexbox to create a row */
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 20px;
     justify-content: flex-start; /* Align items to the start of the flex container */
     align-items: center; /* Center logos vertically */
     width: 100%; /* Ensure the stack fills the parent width */
@@ -832,6 +920,7 @@ p { /* base */
     color: lightgray; /* Icon color */
     font-size: 24px; /* Adjust the size of the icon */
     transition: color 0.3s ease; /* Smooth transition for color change */
+    position: relative; /* Make the icon stay in place */
 }
 
 /* Change color on hover */
@@ -839,14 +928,53 @@ p { /* base */
     color: darkgray; /* Change color when hovered */
 }
 
-/* Style for Font Awesome bars icon specifically */
-.fas.fa-bars {
-    /* Additional styles specific to the bars icon can be placed here */
+/* Mobile styles for the navigation */
+@media (max-width: 768px) {
+    .navtoggle {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+        padding-top: 60px; /* Add more padding to push the menu options down */
+    }
+
+    .navtoggle li:not(:last-child) {
+        margin-top: 10px;
+        display: none;
+    }
+
+    .navtoggle.open li:not(:last-child) {
+        display: block;
+    }
+
+    /* Position the icon at the top right without overlapping */
+    .navtoggle li:last-child {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 10;
+    }
 }
 
-/* Media query to adjust icon size for mobile */
-@media (max-width: 768px) {
-    .icon {
-        font-size: 20px; /* Smaller size for mobile screens */
+/* Desktop view: display navigation normally */
+@media (min-width: 769px) {
+    .navtoggle {
+        display: flex;
+        flex-direction: row; /* Display items in a row */
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    /* Ensure all navigation items are visible in desktop */
+    .navtoggle li {
+        display: inline-block; /* Show the menu items */
+        margin-right: 20px; /* Add spacing between items */
+    }
+
+    /* Hide the mobile toggle icon */
+    .navtoggle li:last-child {
+        display: none;
     }
 }
